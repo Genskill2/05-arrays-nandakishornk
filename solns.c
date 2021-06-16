@@ -22,9 +22,11 @@ int min(int a[],int n)
 float average(int a[], int n)
 {
 	int s=0,i;
+	float av;
 	for(i=0;i<n;i++)
 		s+=a[i];
-	return (float(s)/n);
+	av=(float(s)/n);
+	return av;
 }
 
 int mode(int a[],int n)
