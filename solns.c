@@ -39,10 +39,12 @@ int mode(int a[],int n)
 	for(i=0;i<n;i++)
 		c[a[i]]++;
 	for(i=l;i<(h+1);i++)
+	{
 		if(c[i]>m)
 		{
 			m=a[i];
 			mode=i;
 		}
+	}
 	return mode;
 }
