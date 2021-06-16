@@ -31,14 +31,15 @@ float average(int a[], int n)
 
 int mode(int a[],int n)
 {
-	int i,l,h,c[100],m=-2048,mode;
-	l=min(a,n);
-	h=max(a,n);
-	for(i=l;i<(h+1);i++)
+	int i,h=-2048,c[100],m=-2048,mode;
+	for(i=0;i<n;i++)
+		if(a[i]>h)
+			h=a[i];
+	for(i=0;i<=h;i++)
 		c[i]==0;
 	for(i=0;i<n;i++)
 		c[a[i]]++;
-	for(i=l;i<(h+1);i++)
+	for(i=0;i<=h;i++)
 	{
 		if(c[i]>m)
 		{
