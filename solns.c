@@ -25,7 +25,7 @@ float average(int a[], int n)
 	float av;
 	for(i=0;i<n;i++)
 		s+=a[i];
-	av=(float(s)/n);
+	av=s/n;
 	return av;
 }
 
