@@ -44,3 +44,19 @@ int mode(int a[],int n)
 	}
 	return mode;
 }
+
+int factors(int n,int a[])
+{
+	int i,c=0,p={2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
+	while(n!=1)
+	{
+		for(i=0;i<15;i++)
+			if(n%p[i]==0)
+			{
+				a.append(p[i]);
+				c++;
+				n=n/p[i];
+			}
+	}
+	return c;
+}
