@@ -56,6 +56,7 @@ int factors(int n,int a[])
 				a[c]=p[i];
 				c++;
 				n=n/p[i];
+				break;
 			}
 	}
 	return c;
