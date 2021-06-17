@@ -53,7 +53,7 @@ int factors(int n,int a[])
 		for(i=0;i<15;i++)
 			if(n%p[i]==0)
 			{
-				a.append(p[i]);
+				a[c]=p[i];
 				c++;
 				n=n/p[i];
 			}
